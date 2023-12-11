@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-image: url(https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923_1280.jpg);
+  /* background: #006eff79; */
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h1{
+  color:#006eff8c;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Dhurjati', sans-serif;
+}
+
+img{
+  display: flex;
+  padding: 3em;
+  height: 400px;
+  width: 400px;
+
+}
+
+
+
+
+
+.td{
+ display: flex;
+ 
+ 
+}
+
+.card1 img{
+  border-radius: 500px;
+}
+.card2 img{
+  border-radius: 500px;
+}
+
+.card3 img{
+  border-radius: 500px;
+}
+.card4 img{
+  border-radius: 500px;
+}
+.card1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: #00000000;
+  border: solid 2px #ffffff00;
+  transition: 1s;
+  animation-name: mexer;
+  animation-duration:10s
+}
+
+.card1 p{
+  font-family: 'Playfair Display', serif;
+  color: #ffffff00;
+  text-align: center;
+  justify-content: center;
+  transition: 2s;
+  text-decoration: underline;
+  animation-name: mexer;
+  animation-duration:10s
+}
+
+
+
+.card3{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: #00000000;
+  border: solid 2px #ffffff00;
+  transition: 1s;
+  animation-name: mexer;
+  animation-duration:10s
+}
+
+.card3 p{
+  margin-top: 8em;
+  color: #ffffff00;
+  text-align: center;
+  justify-content: center;
+  transition: 2s;
+  text-decoration: underline;
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+.card4{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: #00000000;
+  border: solid 2px #ffffff00;
+  transition: 1s;
+  animation-name: mexer;
+  animation-duration:10s
+}
+
+.card4 p{
+  margin-top: 8em;
+  color: #ffffff00;
+  text-align: center;
+  justify-content: center;
+  text-decoration: underline;
+  transition: 2s;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.card1:hover{
+  border: 1px, rgba(0, 0, 255, 0.507);
+  background: #0000006c;
+    margin-top: 8em;
+    text-align: center;
+    justify-content: center;
+}
+
+  
+.card1 p:hover{
+  color: #10ae109f;
+}
+
+.card2:hover{
+  border: 1px, rgba(0, 0, 255, 0.507);
+  background: #0000006c;
+    margin-top: 8em;
+    text-align: center;
+    justify-content: center;
+}
+
+  
+.card2 p:hover{
+  color: #10ae109f;
+}
+
+.card3:hover{
+  border: 1px, rgba(0, 0, 255, 0.507);
+  background: #0000006c;
+    margin-top: 8em;
+    text-align: center;
+    justify-content: center;
+}
+
+  
+.card3 p:hover{
+color: #10ae109f;
+}
+
+.card4:hover{
+  border: solid 1px, #0000ff81;
+  background: #0000006c;
+    margin-top: 8em;
+    text-align: center;
+    justify-content: center;
+}
+
+  
+.card4 p:hover{
+  color: #10ae109f;
+
+
+}
+
+.card1 h2{
+  text-align: center;
+  margin-left: 8em;
+ 
+  
+}
+
+.card2 h2{
+  text-align: center;
+  margin-left: 8em;
+ 
+  
+}
+
+.card3 h2{
+  text-align: center;
+  margin-left: 8em;
+ 
+  
+}
+
+.card4 h2{
+  text-align: center;
+margin-right: 8em;
+  
+}
+
+
+
+.p1{
+  
+  text-align: center;
+  justify-content: center;
+  margin-top: 10em;
+  
+}
+
+
+@keyframes mexer {
+  0%{
+    transform: translateY(0%);
+  }
+
+  50%{
+    transform: translateY(-20%);
+  }
+
+  100%{
+    transform: translateY(20%);
+  }
+  
+}
+
+h2{
+  color: rgba(255, 255, 255, 0.493);
+}
+
+
+
+
+.container{
+  overflow-x: hidden;
+ margin-top: 10em;
+  position: relative; 
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 900px;
+
+}
+
+.carrossel{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   transform-style: preserve-3d ;
+   animation: rotate360 20s infinite forwards linear;
+}
+
+
+.imagem{
+   position: absolute;
+   width: 300px;
+   height: 300px;
+   top: 40px;
+   left: 10px;
+   right: 10px;
+   background-size: cover;
+   display: flex;
+}
+
+.imagem span{
+   margin: auto;
+   font-size: 1.2em;
+   text-align: center;
+}
+
+
+@keyframes rotate360 {
+   from{
+transform: rotateY(0deg);
+   }
+
+   to{
+transform: rotateY(-360deg);
+   }
+}
+
+
+
+.imagem:nth-child(1){
+   background-image: url(formada.jfif);
+   transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+   background-image: url(ela.jfif);
+   transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+   background-image: url(nos.jfif);
+   transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+   background-image: url(elas.jfif);
+   transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+   background-image: url(trem.jfif);
+   transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+   background-image: url(tropa.jfif);
+   transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+   background-image: url(pqn.jfif);
+   transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+   background-image: url(homi.jfif);
+   transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+   background-image: url(futizin.jfif);
+   transform: rotateY(320deg) translateZ(430px);
+}
+
+
+p{
+   text-align: center;
+   margin-top: 2em;
+   font-family: 'Vina Sans', sans-serif;
+   font-size: 2em;
+   color: #ff00006b;
+   text-decoration: underline;
+}
+
+
+.k img{
+  
+ 
+  display: flex;
+  width: 150px;
+  height: 150px ;
+  margin-right: 5%;
+  border-radius: 500px;
+  text-align: center;
+  
+}
+
+footer{
+  margin-top: 32em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family:Arial, Helvetica, sans-serif;
+ 
+ 
+}
+
+
+.ps{
+  animation-name: ps;
+  animation-duration: 10s;
+  
+}
+
+@keyframes ps {
+  0%{
+    transform:translateY(0%)
+  }
+
+  100%{
+    transform: translateY(-900%);
+  }
+
+
+}
